@@ -1,2 +1,0 @@
-# Excel-RAG
-Excel-RAG
