@@ -54,7 +54,7 @@ class Settings:
 
         return cls(
             api_key=(values.get('OPENAI_API_KEY') or '').strip(),
-            model=values.get('OPENAI_MODEL') or 'gpt-4o-mini',
+            model=values.get('OPENAI_MODEL'),
             base_url=values.get('OPENAI_BASE_URL') or None,
             max_upload_mb=integer('MAX_UPLOAD_MB', 25),
             max_files=integer('MAX_FILES', 5),
