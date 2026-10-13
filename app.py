@@ -10,8 +10,8 @@ from openai import APIConnectionError, APIStatusError, APITimeoutError, Authenti
 from rag import Settings, answer_question, load_tables
 
 
-st.set_page_config(page_title='Chat with your tables', page_icon='📊', layout='wide')
-st.title('📊 Chat with your tables')
+st.set_page_config(page_title='Chat with your tables', layout='wide')
+st.title('Chat with your tables')
 st.caption('Upload CSV or Excel files, then ask questions in plain English. Beta version - created by samsamsamsamuel-designVS')
 
 try:
