@@ -33,7 +33,7 @@ with st.sidebar:
                                max_upload_size=settings.max_upload_mb)
     st.caption(f'Up to {settings.max_files} files • {settings.max_upload_mb} MB total • '
                f'{settings.max_rows:,} rows total')
-    #st.caption(f'Model: {settings.model}')
+    st.caption(f'Model: {settings.model}')
     if not settings.api_key:
         st.warning('Add your OPENAI_API_KEY in .env to enable chat.')
     if st.button('Clear chat', width='stretch'):
